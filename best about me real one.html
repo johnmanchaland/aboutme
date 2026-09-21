@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <audio autoplay id="bg-music" preload="auto" loop>
+      <source src="assets/cutyourrings.mp3" type="audio/mpeg">
+  </audio>
+  <script>
+  window.addEventListener('click', () => {
+    const audio = document.getElementById('bg-music');
+    audio.play();
+  }, { once: true });
+  </script>
+  <head>
+    <title>My Page</title>
+    <style>
+      /* --- CSS SECTION --- */
+      body {
+        background-image: url("https://limbuscompany.wiki.gg/images/thumb/Battle_Yi_Sang_Fathoms_of_the_Ego_BG.png/1280px-Battle_Yi_Sang_Fathoms_of_the_Ego_BG.png?87852c");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        font-family: Georgia, sans-serif;
+      }
+
+      h1 {
+        color: #d4e1e8;
+        text-align: center;
+        background-color: #000000;
+        padding: 8px;
+      }
+
+      h2 {
+        color: #d4e1e8;
+      }
+
+      p {
+        color: #a2becd;
+        font-size: 16px;
+      }
+
+      ul {
+        color: #a2becd;
+      }
+
+      .highlight {
+        background-color: #000000;
+        padding: 15px;
+      }
+
+      .chara {
+        background-color: rgba(250, 250, 250, 0.25);
+        padding: 10px;
+      }
+
+      .middle {
+        vertical-align: middle;
+      }
+
+      .image-container {
+        position: relative;
+        display: inline-block;
+        width: 75px;
+        height: auto;
+      }
+
+      .image-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .image-container .hover-img {
+        opacity: 0;
+      }
+
+      .image-container .default-img {
+        opacity: 1;
+      }
+
+      .image-container:hover .hover-img {
+        opacity: 1;
+      }
+
+      .image-container:hover .default-img {
+        opacity: 0;
+      }
+
+      .image-wrapper {
+        width: 75px;
+        height: 75px;
+        display: inline-block;
+      }
+
+      .botan {
+        display: inline-block;
+        background-color: #ffef23;
+        color: #1e2e2d;
+        padding: 10px 10px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+
+      .botan:hover {
+        background-color: #fff570;
+      }
+
+      .cover {
+        opacity: 1;
+      }
+
+      .cover:hover {
+        opacity: 0.75;
+      }
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 177px;
+      }
+      .square {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+      }
+
+    </style>
+  </head>
+
+  <body>
+  <h1 class="highlight">HI I'M MELODY KIYOHARA</h1>
+  <p>This is totally the best about me ever</p>
+
+  <h2>I like playing video games such as:</h2>
+  <ul>
+      <li>Minecraft</li>
+  </ul>
+  <h2>Here are my favorite foods:</h2>
+  <ul>
+      <li>Ice cream</li>
+      <li>Popsicle</li>
+      <li>Fried chicken</li>
+  </ul>
+
+  <p class="chara" style="color: #fff570; background-color: rgba(255, 239, 35, 0.5);"><img class="middle" src="https://limbuscompany.wiki.gg/images/Don_Quixote_StoryLog.png" style="width: 75px; height: auto;"> Don Quixote</p>
+  <p class="chara" style="color: #ffb54d; background-color: rgba(255, 149, 0, 0.5);"><img class="middle" src="https://limbuscompany.wiki.gg/images/Ishmael_StoryLog.png" style="width: 75px; height: auto;"> Ishmael</p>
+  <p class="chara" style="color: #ff1d1d; background-color: rgba(207, 0, 0, 0.5);"><img class="middle" src="https://static.wikia.nocookie.net/limbuscompany/images/6/66/Ryoshu_StoryLog.png/revision/latest?cb=20230404162311" style="width: 75px; height: auto;"> Ryoshu</p>
+
+  <div class="wrapper">
+    <div class="image-container">
+      <div class="image-wrapper">
+        <img src="https://limbuscompany.wiki.gg/images/SC_Don_Quixote_Sprite_1.png" class="default-img" style="width: 200px; height: auto;">
+        <img src="https://limbuscompany.wiki.gg/images/SC_Don_Quixote_Sprite_2.png" class="hover-img" style="width: 200px; height: auto;">
+      </div>
+    </div>
+    <h2>Listen to this songs</h2>
+  </div>
+    <a href="https://www.youtube.com/watch?v=ZuifkacZ0TA&list=RDZuifkacZ0TA&start_radio=1&pp=ygUJaGVybyBtaWxpoAcB" target="_blank" rel="noopener noreferrer" class="botan"><img src="https://i.scdn.co/image/ab67616d0000b27302c2b2de521a9b3d25ed6966" style="width: 200px; height: auto;" class="cover"></a>
+    <a href="https://www.youtube.com/watch?v=h0djuhl97Kw&list=RDh0djuhl97Kw&start_radio=1" target="_blank" rel="noopener noreferrer" class="botan"><img src="https://images.genius.com/d131ed24a8c123c09c6596b9d852b30d.1000x1000x1.png" style="width: 200px; height: auto;" class="cover"></a>
+    <a href="https://youtu.be/hTP6qfi9olc?si=ulwAtRbAw3RA-qck" target="_blank" rel="noopener noreferrer" class="botan"><img src="https://i.ytimg.com/vi/hTP6qfi9olc/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGHIgRig6MA8=&rs=AOn4CLCr-mbG03MFM5VbXcUIhjqWj2xstg" style="width: 200px; height: cover;" class="cover square"></a>
+  </body>
